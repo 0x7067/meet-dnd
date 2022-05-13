@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "meet-dnd",
+  "version": "1.0",
+
+  "description": "Activate do not disturb when you are presenting your screen",
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.meet.google.com/*"],
+      "js": ["meet-dnd.js"]
+    }
+  ]
+}
